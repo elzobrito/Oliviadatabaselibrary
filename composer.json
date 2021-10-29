@@ -1,0 +1,21 @@
+{
+  "name": "elzobrito/databaselibrary",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Elzo Brito dos Santos Filho",
+      "email": "elzo.filho@etec.sp.gov.br"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "OliviaDatabaseLibrary\\": "src",
+      "Model\\": "model",
+      "Config\\": "config",
+      "Publico\\": "public_html"
+    }
+  },
+  "require": {
+    "php": "^7.1"
+  }
+}
