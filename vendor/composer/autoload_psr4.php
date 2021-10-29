@@ -6,8 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'elzobrito\\Model\\' => array($baseDir . '/model'),
-    'elzobrito\\Config\\' => array($baseDir . '/config'),
-    'elzobrito\\' => array($baseDir . '/src'),
-    'Publico\\' => array($baseDir . '/public_html'),
+    'OliviaDatabasePublico\\' => array($baseDir . '/public_html'),
+    'OliviaDatabaseModel\\' => array($baseDir . '/model'),
+    'OliviaDatabaseLibrary\\' => array($baseDir . '/src'),
+    'OliviaDatabaseConfig\\' => array($baseDir . '/config'),
 );

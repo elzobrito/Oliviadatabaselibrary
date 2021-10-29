@@ -1,6 +1,6 @@
 <?php
 
-namespace OliviaDatabaseLibrary\Config;
+namespace OliviaDatabaseConfig;
 
 use OliviaDatabaseLibrary\ADatabase;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace OliviaDatabaseLibrary\Model;
+namespace OliviaDatabaseModel;
 
-use OliviaDatabaseLibrary\Config\Database;
+use OliviaLib\Database;
 use OliviaDatabaseLibrary\QueryBuilder;
 use OliviaDatabaseLibrary\Model as iModel;
 

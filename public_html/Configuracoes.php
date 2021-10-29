@@ -1,7 +1,7 @@
 <?php
-namespace Publico;
+namespace OliviaDatabasePublico;
 
-use OliviaDatabaseLibrary\Model\Model;
+use OliviaDatabaseModel\Model;
 
 class Configuracoes extends Model
 {

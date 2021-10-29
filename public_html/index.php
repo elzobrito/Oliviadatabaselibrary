@@ -1,6 +1,6 @@
 <?php
 
-namespace Publico;
+namespace OliviaDatabasePublico;
 
 require dirname(__DIR__) . '/vendor/autoload.php';
 

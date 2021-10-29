@@ -7,35 +7,36 @@ namespace Composer\Autoload;
 class ComposerStaticInitaa0a474bd58e2142db771a29fbe38238
 {
     public static $prefixLengthsPsr4 = array (
-        'e' => 
+        'O' => 
         array (
-            'elzobrito\\Model\\' => 16,
-            'elzobrito\\Config\\' => 17,
-            'elzobrito\\' => 10,
-        ),
-        'P' => 
-        array (
-            'Publico\\' => 8,
+            'OliviaDatabasePublico\\' => 22,
+            'OliviaDatabaseModel\\' => 20,
+            'OliviaDatabaseLibrary\\' => 22,
+            'OliviaDatabaseConfig\\' => 21,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'elzobrito\\Model\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/model',
-        ),
-        'elzobrito\\Config\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/config',
-        ),
-        'elzobrito\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
-        'Publico\\' => 
+        'OliviaDatabasePublico\\' => 
         array (
             0 => __DIR__ . '/../..' . '/public_html',
         ),
+        'OliviaDatabaseModel\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/model',
+        ),
+        'OliviaDatabaseLibrary\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
+        'OliviaDatabaseConfig\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/config',
+        ),
+    );
+
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -43,6 +44,7 @@ class ComposerStaticInitaa0a474bd58e2142db771a29fbe38238
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitaa0a474bd58e2142db771a29fbe38238::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitaa0a474bd58e2142db771a29fbe38238::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitaa0a474bd58e2142db771a29fbe38238::$classMap;
 
         }, null, ClassLoader::class);
     }

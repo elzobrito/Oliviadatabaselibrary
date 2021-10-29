@@ -10,9 +10,9 @@
   "autoload": {
     "psr-4": {
       "OliviaDatabaseLibrary\\": "src",
-      "Model\\": "model",
-      "Config\\": "config",
-      "Publico\\": "public_html"
+      "OliviaDatabaseModel\\": "model",
+      "OliviaDatabaseConfig\\": "config",
+      "OliviaDatabasePublico\\": "public_html"
     }
   },
   "require": {
