@@ -2,7 +2,7 @@
 
 namespace OliviaDatabaseModel;
 
-use OliviaLib\Database;
+use OliviaDatabaseConfig\Database;
 use OliviaDatabaseLibrary\QueryBuilder;
 use OliviaDatabaseLibrary\Model as iModel;
 
@@ -11,6 +11,7 @@ class Model implements iModel
     protected $table;
     protected $drive;
     protected $fillable = array();
+    protected $atributos = array();
 
     /**
      * @var array
@@ -68,12 +69,28 @@ class Model implements iModel
                 ->delete([$value]);
         }
     }
+    
+    public function deleteFull($id = null, $primaryKey = null, $wheres = null, $values = null, $join = null, $group = null, $having = null, $limit = null)
+    {
+        if ($id || isset($this->id)) {
+            $value = $id ?? isset($this->id);
+            $qb = new QueryBuilder(Database::getDB($this->drive));
+            return $qb
+                ->table($this->table)
+                ->where($wheres ?? [($primaryKey ?? 'id') . ' = ?'])
+                ->join($join)
+                ->group($group)
+                ->having($having)
+                ->limit($limit)    
+                ->delete($values ?? [$value]);
+        }
+    }
 
     public function find($fields, $wheres, $values, $join = null, $group = null, $order = null, $having = null, $limit = null)
     {
         $qb = new QueryBuilder(Database::getDB($this->drive));
         return $qb->table($this->table)
-            ->fields($fields ?? ['*'])
+            ->fields($fields ?? $this->atributos)
             ->where($wheres)
             ->join($join)
             ->group($group)
@@ -88,7 +105,7 @@ class Model implements iModel
     {
         $qb = new QueryBuilder(Database::getDB($this->drive));
         return $qb->table($this->table)
-            ->fields($fields ?? ['*'])
+            ->fields($fields ?? $this->atributos)
             ->order($order)
             ->limit($limit)
             ->select();
@@ -112,7 +129,7 @@ class Model implements iModel
     {
         $qb = new QueryBuilder(Database::getDB($this->drive));
         return $qb->table($this->table)
-            ->fields($fields ?? ['*'])
+            ->fields($fields ?? $this->atributos)
             ->where([($primaryKey ?? 'id') . ' = ?'])
             ->join($join)
             ->order($order)
