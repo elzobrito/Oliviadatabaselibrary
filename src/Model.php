@@ -8,7 +8,7 @@ interface Model
     public function update($fields, $wheres, $values);
     public function save($fields = null, $valores = null);
     public function delete($id = null, $primaryKey = null);
-    public function deleteFull($id = null, $primaryKey = null, $wheres = null, $values = null, $join = null, $group = null, $having = null, $limit = null)
+    public function deleteFull($id = null, $primaryKey = null, $wheres = null, $values = null, $join = null, $group = null, $having = null, $limit = null);
     public function find($fields, $wheres, $values, $join = null, $group = null, $order = null, $having = null, $limit = null);
     public function all($fields = null, $order = null, $limit = null);
     public function count($wheres = null, $values = null, $join = null, $group = null, $order = null, $having = null, $limit = null);
