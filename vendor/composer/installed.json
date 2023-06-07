@@ -1,0 +1,46 @@
+{
+    "packages": [
+        {
+            "name": "elzobrito/olivia-cache",
+            "version": "1.0",
+            "version_normalized": "1.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elzobrito/OliviaCache.git",
+                "reference": "ed6830c335468665495887ab5e42f13e2411ae41"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elzobrito/OliviaCache/zipball/ed6830c335468665495887ab5e42f13e2411ae41",
+                "reference": "ed6830c335468665495887ab5e42f13e2411ae41",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.5|^8.0"
+            },
+            "time": "2023-06-07T18:19:50+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "OliviaCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "elzobrito",
+                    "email": "elzo.filho@etec.sp.gov.br"
+                }
+            ],
+            "description": "Cache Olivia",
+            "support": {
+                "issues": "https://github.com/elzobrito/OliviaCache/issues",
+                "source": "https://github.com/elzobrito/OliviaCache/tree/1.0"
+            },
+            "install-path": "../elzobrito/olivia-cache"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

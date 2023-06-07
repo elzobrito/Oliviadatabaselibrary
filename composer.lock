@@ -1,0 +1,58 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "b53d681a9644d2e3c2a7c6357e017b36",
+    "packages": [
+        {
+            "name": "elzobrito/olivia-cache",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elzobrito/OliviaCache.git",
+                "reference": "ed6830c335468665495887ab5e42f13e2411ae41"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elzobrito/OliviaCache/zipball/ed6830c335468665495887ab5e42f13e2411ae41",
+                "reference": "ed6830c335468665495887ab5e42f13e2411ae41",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.5|^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OliviaCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "elzobrito",
+                    "email": "elzo.filho@etec.sp.gov.br"
+                }
+            ],
+            "description": "Cache Olivia",
+            "support": {
+                "issues": "https://github.com/elzobrito/OliviaCache/issues",
+                "source": "https://github.com/elzobrito/OliviaCache/tree/1.0"
+            },
+            "time": "2023-06-07T18:19:50+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7.1"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}
